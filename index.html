@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <title>Introduction to Web Development</title>
 
-    <!-- IMPORTANT FOR MOBILE -->
+    <!-- REQUIRED FOR MOBILE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- INTRO OVERLAY -->
+<!-- INTRO SCREEN -->
 <div id="intro" class="intro">
     <div class="intro-box">
         <img
                 src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/mr-bean-funny.gif"
                 alt="Funny Hi">
 
-        <h1>HELLO SANJAY SIR 👋</h1>
+        <h1>HELLO SANJAY SANTHOSH SIR 👋</h1>
         <p>Do you want to see my webpage?</p>
 
         <button onclick="enterSite()">Yes, Show Me 😄</button>
     </div>
 </div>
 
-<!-- MAIN WEBSITE -->
+<!-- MAIN CONTENT -->
 <div id="main-content" class="hidden">
 
+    <!-- HERO -->
     <header class="hero">
         <h1>Welcome to Web Development Class</h1>
         <p class="subtitle">Introduction to Web Development</p>
@@ -37,12 +38,13 @@
         </p>
     </header>
 
+    <!-- ABOUT -->
     <section class="card split">
         <div class="text">
             <h2>What is Web Development?</h2>
             <p>
-                Web Development is the process of creating websites and web applications.
-                It uses HTML for structure, CSS for styling, and JavaScript for interactivity.
+                Web Development is the process of creating websites and web applications
+                using HTML for structure, CSS for styling, and JavaScript for interactivity.
             </p>
         </div>
 
@@ -53,6 +55,7 @@
         </div>
     </section>
 
+    <!-- VIDEO -->
     <section class="card split reverse">
         <div class="media">
             <video controls>
@@ -66,17 +69,19 @@
             <h2>Web Development Overview</h2>
             <p>
                 This video explains how HTML, CSS, and JavaScript work together
-                to build modern and responsive websites.
+                to create responsive and interactive websites.
             </p>
         </div>
     </section>
 
+    <!-- JS INTERACTION -->
     <section class="card">
         <h2>Why Learn Web Development?</h2>
         <button onclick="showMessage()">Click to Know</button>
         <p id="message"></p>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 | Introduction to Web Development | Designed by Chiranjit C</p>
     </footer>
