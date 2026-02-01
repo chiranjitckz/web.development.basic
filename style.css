@@ -1,0 +1,131 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #eef2f7;
+    color: #1f2933;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+.student {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+/* CARD */
+.card {
+    background-color: white;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 50px 40px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* SPLIT LAYOUT */
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.split.reverse {
+    flex-direction: row-reverse;
+}
+
+/* TEXT */
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* MEDIA */
+.media {
+    flex: 1;
+    text-align: center;
+}
+
+.media img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.media video {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 14px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* BUTTON */
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 14px 35px;
+    font-size: 17px;
+    background: linear-gradient(to right, #2563eb, #1d4ed8);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #1d4ed8, #1e40af);
+}
+
+/* FOOTER */
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .split {
+        flex-direction: column;
+        text-align: center;
+    }
+}
