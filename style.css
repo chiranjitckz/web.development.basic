@@ -9,7 +9,7 @@ body {
     color: #1f2933;
 }
 
-/* POPUP INTRO */
+/* INTRO */
 .intro {
     position: fixed;
     inset: 0;
@@ -31,6 +31,14 @@ body {
 .intro-box img {
     width: 140px;
     margin-bottom: 15px;
+}
+
+.intro-box h1 {
+    font-size: 26px;
+}
+
+.intro-box p {
+    font-size: 16px;
 }
 
 .hidden {
@@ -100,7 +108,7 @@ body {
     text-align: center;
 }
 
-/* MEDIA */
+/* 🔥 MEDIA FIX (IMPORTANT) */
 .media img,
 .media video {
     width: 100%;
@@ -108,11 +116,11 @@ body {
     border-radius: 14px;
 }
 
-/* DESKTOP LIMIT */
+/* DESKTOP CONTROL */
 @media (min-width: 769px) {
     .media img,
     .media video {
-        max-width: 520px;
+        max-width: 500px;
     }
 }
 
@@ -136,35 +144,20 @@ footer {
     font-size: 14px;
 }
 
-/* 📱 REAL FIX — FULL WIDTH VIDEO ON PHONE */
+/* 📱 MOBILE FIX (THIS SOLVES YOUR PROBLEM) */
 @media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
 
     .split {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Break out of card width ONLY for video */
-    .video-card {
-        margin-left: -25px;
-        margin-right: -25px;
-        padding-left: 0;
-        padding-right: 0;
-        border-radius: 0;
-    }
-
-    .video-card video {
-        width: 100vw;
-        max-width: 100vw;
-        border-radius: 0;
-        display: block;
-    }
-
-    .video-card .text {
-        padding: 20px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
+    .media img,
+    .media video {
+        max-width: 100%;
     }
 }
