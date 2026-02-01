@@ -3,68 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Introduction to Web Development</title>
+
+    <!-- IMPORTANT FOR MOBILE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO SECTION -->
-<header class="hero">
-    <h1>Welcome to Web Development Class</h1>
-    <p class="subtitle">Introduction to Web Development</p>
-    <p class="student">
-        Chiranjit C <br>
-        BSc PMCS – 4th Semester
-    </p>
-</header>
-
-<!-- ABOUT SECTION -->
-<section class="card split">
-    <div class="text">
-        <h2>What is Web Development?</h2>
-        <p>
-            Web Development is the process of creating websites and web applications.
-            It uses HTML for structure, CSS for styling, and JavaScript for interactivity.
-        </p>
-    </div>
-
-    <div class="media">
+<!-- INTRO OVERLAY -->
+<div id="intro" class="intro">
+    <div class="intro-box">
         <img
-                src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/amrita%20colg%20photo.webp"
-                alt="Amrita College">
-    </div>
-</section>
+                src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/mr-bean-funny.gif"
+                alt="Funny Hi">
 
-<!-- VIDEO SECTION -->
-<section class="card split reverse">
-    <div class="media">
-        <video controls>
-            <source
-                    src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/SnapReels.Net_AQN0zdCALbNZBrOM4LQjVkeo4PJodWTZZCgN_NVHnQsXQNKswLIRPOldVDaYtjLAYXmG_Bu89roLnnG6u9yaejzt7_wWY-hqaI21mKQ.mp4"
-                    type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+        <h1>HELLO SANJAY SIR 👋</h1>
+        <p>Do you want to see my webpage?</p>
 
-    <div class="text">
-        <h2>Web Development Overview</h2>
-        <p>
-            This video gives a basic overview of how web technologies work together
-            to build modern and responsive websites.
+        <button onclick="enterSite()">Yes, Show Me 😄</button>
+    </div>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="main-content" class="hidden">
+
+    <header class="hero">
+        <h1>Welcome to Web Development Class</h1>
+        <p class="subtitle">Introduction to Web Development</p>
+        <p class="student">
+            Chiranjit C <br>
+            BSc PMCS – 4th Semester
         </p>
-    </div>
-</section>
+    </header>
 
-<!-- INTERACTION SECTION -->
-<section class="card">
-    <h2>Why Learn Web Development?</h2>
-    <button onclick="showMessage()">Click to Know</button>
-    <p id="message"></p>
-</section>
+    <section class="card split">
+        <div class="text">
+            <h2>What is Web Development?</h2>
+            <p>
+                Web Development is the process of creating websites and web applications.
+                It uses HTML for structure, CSS for styling, and JavaScript for interactivity.
+            </p>
+        </div>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 | Introduction to Web Development | Designed by Chiranjit C</p>
-</footer>
+        <div class="media">
+            <img
+                    src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/amrita%20colg%20photo.webp"
+                    alt="College Image">
+        </div>
+    </section>
+
+    <section class="card split reverse">
+        <div class="media">
+            <video controls>
+                <source
+                        src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/SnapReels.Net_AQN0zdCALbNZBrOM4LQjVkeo4PJodWTZZCgN_NVHnQsXQNKswLIRPOldVDaYtjLAYXmG_Bu89roLnnG6u9yaejzt7_wWY-hqaI21mKQ.mp4"
+                        type="video/mp4">
+            </video>
+        </div>
+
+        <div class="text">
+            <h2>Web Development Overview</h2>
+            <p>
+                This video explains how HTML, CSS, and JavaScript work together
+                to build modern and responsive websites.
+            </p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Why Learn Web Development?</h2>
+        <button onclick="showMessage()">Click to Know</button>
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 | Introduction to Web Development | Designed by Chiranjit C</p>
+    </footer>
+
+</div>
 
 <script src="script.js"></script>
 </body>
