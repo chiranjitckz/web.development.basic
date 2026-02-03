@@ -1,10 +1,5 @@
-function showSecondIntro() {
-    document.getElementById("intro1").style.display = "none";
-    document.getElementById("intro2").style.display = "flex";
-}
-
 function enterSite() {
-    document.getElementById("intro2").style.display = "none";
+    document.getElementById("intro").style.display = "none";
     document.getElementById("main-content").style.display = "block";
 }
 
