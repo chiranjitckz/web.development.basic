@@ -8,13 +8,23 @@
 </head>
 <body>
 
-    <!-- INTRO POPUP -->
-    <div id="intro" class="intro">
+    <!-- INTRO POPUP 1 -->
+    <div id="intro1" class="intro">
         <div class="intro-box">
             <img src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/mr-bean-funny.gif" alt="Funny Hi">
             <h1>HELLO SANJAY SIR 👋</h1>
             <p>Do you want to see my webpage?</p>
-            <button onclick="enterSite()">Yes, Show Me 😄</button>
+            <button onclick="showSecondIntro()">Yes, Show Me 😄</button>
+        </div>
+    </div>
+
+    <!-- INTRO POPUP 2 (FUN CONFIRMATION) -->
+    <div id="intro2" class="intro hidden">
+        <div class="intro-box">
+            <img src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/oh-oh-really.gif" alt="Really?">
+            <h1>Oh… Really? 😏</h1>
+            <p>Are you sure you want to continue?</p>
+            <button onclick="enterSite()">Yes, Continue ✅</button>
         </div>
     </div>
 
@@ -46,14 +56,13 @@
             </div>
         </section>
 
-        <!-- VIDEO SECTION (TEXT ABOVE VIDEO) -->
+        <!-- VIDEO SECTION -->
         <section class="card">
             <h2>Web Development Overview</h2>
             <p>
                 This video explains how HTML, CSS, and JavaScript work together to create
                 responsive and interactive websites.
             </p>
-
             <div class="media">
                 <video controls>
                     <source src="https://raw.githubusercontent.com/chiranjitckz/web.development.basic/main/SnapReels.Net_AQN0zdCALbNZBrOM4LQjVkeo4PJodWTZZCgN_NVHnQsXQNKswLIRPOldVDaYtjLAYXmG_Bu89roLnnG6u9yaejzt7_wWY-hqaI21mKQ.mp4" type="video/mp4">
